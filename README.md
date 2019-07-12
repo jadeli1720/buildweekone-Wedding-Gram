@@ -14,5 +14,6 @@ When not logged in, you can view the Home, Login, and Register pages. After logg
 
 ### Links:
 [(You can view the original full repository here.)](https://github.com/buildweek-weddingportfolio)
+
 [(Original Wedding Gram site)](https://wedinggram.netlify.com/)
 

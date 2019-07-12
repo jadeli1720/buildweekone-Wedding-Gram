@@ -1,0 +1,324 @@
+#about-luis {
+    margin-top: 115px;
+    padding: 0 50px;
+
+    @media(max-width: 500px) {
+        padding: 0 50px;
+    }
+
+    .img-container-about {
+        position: relative;
+        max-width: 1100px;
+        width: 100%;
+        overflow: hidden;
+        max-height: 500px;
+        height: 100%;
+        margin: 0 auto;
+
+        @media(max-width: 700px) {
+            height: auto;
+        }
+
+    .header-img {
+        width: 100%;
+    }
+
+    h1 {
+        font-family: cinque-donne, cursive;
+        color: @dark-blue;
+        font-size: 7rem;
+        position: absolute;
+        top: 20%;
+        right: 140px;
+        width: 300px;
+        padding: 60px 0;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.8);
+
+        @media(max-width: 700px) {
+          top: 20%;
+          right: 20%;
+        }
+
+        @media(max-width: 700px) {
+          top: 5%;
+          right: 10%;
+        }
+    }
+}
+
+    .txt-container-about {
+        padding: 50px 0;
+        max-width: 1050px;
+        width: 100%;
+        margin: 0 auto;
+        line-height: 25px;
+    }
+
+    p{
+      font-size: 2rem;
+      line-height: 28px;
+      padding: 0 20px;
+    }
+}
+
+h2 {
+  color: #0A235C;
+  font-family: arial, sans-serif;
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 30px;
+  font-size: 30px;
+  @media screen and (max-width: 500px) {
+  }   
+} 
+
+// Redesign made by Jade 6/30/2019
+
+// Tabs
+.tabs-navigation {
+  .custom-layout(center,center);
+  max-width: 100%;
+  width: 1200px;
+  margin: 50px 0px 25px;
+
+}
+
+.team {
+  .custom-layout(center,center);
+  color: white;
+  font-family: Lato, 'Futura', Helvetica, sans-serif; 
+  font-size: 2rem;
+
+  .tab {
+    background: @dark-blue;
+    border: 2px solid @dark-blue;
+    border-radius: 2px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 7px 15px;
+    margin: 0 5px;
+    cursor: pointer;
+    .transition();
+
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+
+  .active-tabs {
+    background: @pink;
+    color: @dark-blue;
+    font-weight: 600;
+  }
+}
+
+#about-divider{
+  display: block;
+	height: 1px;
+	border: 0;
+	border-top: 2px solid @mint;
+	margin: 0 auto;
+	max-width: 1060px;
+	width: 100%;
+}
+
+// Cards
+.cards-container {
+  .custom-layout(space-evenly,none);
+  flex-wrap: wrap;
+  max-width: 100%;
+  width: 1200px;
+  margin-top: 50px;
+}
+
+.card {
+   background-color: @light-grey;
+   background-image: linear-gradient(to bottom, #f2f2f2, #f5f5f5, #f8f8f8, #fcfcfc, #ffffff);
+   border-bottom:1px solid @light-grey;
+   border-radius: 2px;
+   .custom-layout(space-between,none);
+   flex-direction: column;
+   width: 320px;
+   margin-bottom: 60px;
+  .shadow();
+
+  .card-header {
+    background: @pink;
+    height: 80px;
+    margin-bottom: 20px;
+
+    h2 {
+      color: @dark-pink;
+      font-family: cinque-donne, cursive;
+      font-size: 4rem;
+    }
+  }
+
+  .card-body {
+    margin: 15px auto;
+    .custom-layout(none,align-center);
+    flex-direction: column;
+    height: 380px;
+
+    .card-img {
+      .custom-layout(center, center);
+      height: 200px;
+      margin-bottom: 30px;
+  
+      img {
+        margin: 0 auto;
+        width: 200px;
+        border: 3px solid @dark-blue;
+        border-radius: 50%;
+      }
+    }
+
+    .card-description {
+      height: 75px;
+      padding: 0 10px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    button {
+      .button();
+      box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+      margin: 0 auto;
+
+      &:hover {
+          .button-hover();
+      }
+    }
+  }
+}
+
+
+// Tabs Section - Alexis
+
+// .tabs {
+//   width: 605px;
+//   border: 1px solid;
+//   margin: 0 auto;
+//   box-shadow: 5px 20px 20px grey;
+//   @media screen and (max-width: 500px) {
+//     width: 92%;
+//     height: 102%;
+//     margin-right: 30px;
+//     margin-left: 20px;
+//     border: 2px solid;
+//      }
+  
+//   .tabs-items {
+//     width: 100%;
+//     height: 325px;
+//     display: flex;
+//     justify-content: center;
+//     padding-top: 60px;
+//     background-color:#FFEDEA;
+//     @media screen and (max-width: 500px) {
+//       width: 100%;
+//       height: 99%;
+//       }
+//   }
+
+//   img {
+//     width: 179px;
+//     height: 199px;
+//     object-fit: scale-down;
+//     @media screen and (max-width: 500px) {
+//       width: 50%;
+//        }
+//   }
+
+//     .tabs-item {
+//       display: none; 
+  
+//       width: 75%;
+//       .tabs-item-title {
+//         font-size: 24px;
+//         font-weight: bold;
+//         padding-bottom: 10px;
+//         @media screen and (max-width: 500px) {
+          
+//            }
+//       }
+//       @media screen and (max-width: 500px) {
+//         width: 80%;
+//          }
+//     }
+//     .tabs-item-selected {
+//       display: flex;
+//       flex-direction: row-reverse;
+//       justify-content: space-between;
+//       @media screen and (max-width: 500px) {
+//         width: 87%;
+//          }
+//     }
+  
+//     .tabs-item-context {
+//       text-align: center;
+//       margin-left: 30px;
+//       @media screen and (max-width: 500px) {
+//         width: 80%;
+//         margin-left: 32px;
+//          }
+//     }
+
+//     .tabs-links {
+//       display: flex;
+//       background-color: #FFEDEA;
+//       @media screen and (max-width: 500px) {
+//         width: 10%;
+//          }
+//     }
+  
+//     .tabs-link {
+//       padding: 20px 25px;
+//       font-size: 24px;
+//       background-color: #0A235C;
+//       border-right: 1px solid #FFFFFF;
+//       color: #FFFFFF;
+//       cursor: pointer;
+//       @media screen and (max-width: 500px) {
+//         width: 189%;
+//         font-size: 20px;
+//         padding: 15px 19px;
+//         border-right: 2px solid #FFFFFF;
+//          }
+//     }
+//     .tabs-link-selected {
+//       z-index: 2;
+//       border-right: 1px solid #FFFFFF;
+//       background-color: #FFEDEA;
+//       color: #0A235C;
+//       &:hover {
+//         background-color: #FFFFFF;
+//       }
+//       @media screen and (max-width: 500px) {
+//         width: 112%;
+//          }
+//     }
+
+//     button {
+//       .button();
+//       box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+
+//       &:hover {
+//           .button-hover();
+//       }
+//       @media screen and (max-width: 500px) {
+//         width: 41%;
+//         margin-bottom: 25px;
+//         font-size: 13px;
+//       }
+//     }
+
+//   .tabs-item-description {
+//     margin-bottom: 30px;
+//     margin-top: 20px;
+//     @media screen and (max-width: 500px) {
+//       width: 92%;
+//        }
+//   }  
+
+// }

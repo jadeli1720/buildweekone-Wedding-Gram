@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wedding Planner Website</title>
+
+    <link rel="icon" type="image/png" sizes="32X32" href="assets/imgs/favicon.png">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/iqf5opu.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet">
+    <!-- Css -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/index.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+    <!-- javaScript -->
+    <script src="js/index.js" async></script>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-container">
+            <img class="logo" src="assets/imgs/wg_logo.png" alt="Wedding Gram Logo">
+            <ul class="nav-list">
+                <li class="nav-links"><a href="index.html">Home</a></li>
+                <li class="nav-links"><a href="about.html">About</a></li>
+                <li class="nav-links"><a href="contact.html">Contact</a></li>
+                <div class="log-in inside">
+                    <button onClick=window.open("https://weddinggram.netlify.com")>Get Started</button> 
+                </div> 
+            </ul>
+            <div class="log-in" id='outside'>
+                <button onClick=window.open("https://weddinggram.netlify.com")>Get Started</button>
+            </div>
+            </div>
+            <div class="nav-toggler">
+                <div class="toggle line1"></div>
+                <div class="toggle line2"></div>
+                <div class="toggle line3"></div>
+            </div>
+        </nav>
+    </header>
+    <main class="container">
+        <!-- carousel -->
+        <section id="luis">
+            <div class="carousel-container">
+                <div class="imgs">
+                    <!-- IMG AND TEXT 1 -->
+                    <div class="img-container img-one" data-slide="slide-one">
+                        <div class="carousel-text-container">
+                            <h1 class="welcome">Welcome!</h1>
+                            <h2>Let us plan the wedding of your dreams!</h2>
+                            <button onClick=window.open("https://weddinggram.netlify.com")>Start Here</button>
+                        </div>
+                        <img src="assets/imgs/img-one.png" alt="Bride & groom holding each other on the beach laughing" class="carousel-img-one">
+                    </div>
+
+                    <!-- IMG AND TEXT 2-->
+                    <div class="img-container" data-slide="slide-two">
+                        <div class="carousel-text-container">
+                            <div class="white-background">
+                                <h1 class="welcome">Welcome!</h1>
+                                <h2>Highly qualified wedding planners await.</h2>
+                                <button onClick=window.open("https://weddinggram.netlify.com")>Start Here</button>
+                            </div>
+                        </div>
+                        <img src="assets/imgs/img-two.jpg" alt="Bride and her bouquet of flowers" class="carousel-img-one">
+                    </div>
+
+                    <!-- IMG AND TEXT 3-->
+                    <div class="img-container" data-slide="slide-three">
+                        <div class="carousel-text-container">
+                            <h1 class="welcome">Welcome!</h1>
+                            <h2>Creating the wedding of your dreams.</h2>
+                            <button onClick=window.open("https://weddinggram.netlify.com")>Start Here</button>
+                        </div>
+                        <img src="assets/imgs/img-threeA.png" alt="Bride & Groom Kissing" class="carousel-img-one">
+                    </div>
+                </div>
+
+                <img src="assets/svg/arrow.svg" alt="Right Arrow" id="right-arrow" class="arrow">
+                <img src="assets/svg/arrow.svg" alt="Left Arrow" id="left-arrow" class="arrow">
+            </div>
+        </section>
+
+        <!-- How it works -->
+        <section class="intro">
+            <div class="intro-text">
+                <h1>How It works</h1>
+                <h3>Welcome all future Mr. and Mrs. to a place where your wedding planning stress decreases!</h3>
+                <p>
+                    Wedding Gram is here
+                    to help lower your stress levels. We help you find the perfect Wedding Planner with just a click of
+                    a button. We have created easily usable tools such as: a search engine to help find local wedding planners, samples of wedding events, testimonials from our clients, and many more. Come and explore Wedding Gram and all we have to offer. Let us help you on the next step of completing your wedding plans with a highly qualified professional!</p>
+            </div>
+
+            <div class="table-header">
+                <h2>Wedding Day Timeline</h2>
+            </div>
+
+            <div class="timeline-table">
+                <table>
+                    <tr>
+                        <th>Time</th>
+                        <th>Vendor</th>
+                        <th>Task</th>
+                    </tr>
+                    <tr>
+                        <td>9:00AM</td>
+                        <td>Lisa's Makeup Squad</td>
+                        <td>Makeup artists arrives at 9:00AM and completes makeup on the brides and bridal party for
+                            11:00AM.</td>
+                    </tr>
+                    <tr>
+                        <td>10:00AM</td>
+                        <td>A. & J. Portraits</td>
+                        <td>A. & J. Portraits arrives at 10:00AM and starts taking pictures of the bride and bridal
+                            party getting ready.</td>
+                    </tr>
+                    <tr>
+                        <td>11:15AM</td>
+                        <td>Mary's Hair Studio</td>
+                        <td>Mary and her team arrives at 11:15AM and completes hairdo on the bride and bridal party for
+                            1:15PM.</td>
+                    </tr>
+                    <tr>
+                        <td>1:15PM</td>
+                        <td>Bride and Bridal Party</td>
+                        <td>Bridal party helps the bride put on her wedding dress, accesories and shoes as they get
+                            ready themselves.</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <hr>
+        <!-- Wedding Planners Carousel -->
+        <section class="middle-content">
+            <h1>Featured Wedding Planners</h1>
+            <div class="carousel">
+                <div class="left-button">
+                    <</div> <div class="carousel-caption">
+                        <div class="imgs-container">
+                            <img src="assets/imgs/image-1.png">
+                        </div>
+                        <h3>Amanda Smith</h3>
+                        <p>My team and I specialize in personalized weddings, lavish events and corporate functions. Our
+                            meticulous planning and flawless execution will make your event a success. Every memorable
+                            event begins with impeccable planning and our goal is to make sure that no detail is
+                            overlooked. We are thrilled about the opportunity to be a part of your special event and
+                            look forward to meeting you!</p>
+                </div>
+                <div class="carousel-caption">
+                    <div class="imgs-container">
+                        <img src="assets/imgs/image-2.png" />
+                    </div>
+                    <h3>Lily Tam</h3>
+                    <p>I am the wedding planner that embraces the unique and different. The one who likes to stretch the limits of what people think a wedding should be like. My goal is to make your wedding planning experience an enjoyable one.  To be a lending ear when you are overwhelmed (because that will happen) and an advocate for your wedding day. I love working with those who are artistic, creative and out-of-the-box thinkers.</p>
+                </div>
+                <div class="carousel-caption">
+                    <div class="imgs-container">
+                        <img src="assets/imgs/image-3.png">
+                    </div>
+                    <h3>Alana Johnston</h3>
+                    <p>Hi! I’m Alana Johnston, owner and your wedding planner for Lavender Hill Weddings + Events. Through Lavender Hill Weddings + Events, I bring to each event a design perspective that is thoughtful, stylized and is truly all about you. Being a part of your most important moments is special to me, I look forward to making it special for you. p.s. I cry at all my couple's weddings. </p>
+                </div>
+                <div class="carousel-caption">
+                    <div class="imgs-container">
+                        <img src="assets/imgs/image-4.png">
+                    </div>
+                    <h3>Victoria Garcia</h3>
+                    <p>My team and I at "I do" Wedding Events are a full-service wedding and event planning company dedicated to once-in-a-lifetime celebrations. Let I Do… make your vision a reality. Whether you’re planning an intimate affair, or an elaborate celebration; you deserve to have a coordinator that will help you every step of the way. </p>
+                </div>
+
+                <div class="right-button">></div>
+            </div>
+
+            <div class="start-here-btn">
+                <h2>See more of our highly qualified Wedding Planners!</h2>
+                <button onClick=window.open("https://weddinggram.netlify.com")>Here</button>
+            </div>
+        </section>
+
+        <hr>
+        <!-- Testimonials -->
+        <section class="testimonials">
+            <h1>Testimonials</h1>
+            <div class="articles">
+                <div class="article">
+                    <div class="panel-header">
+                        <div class="img-container">
+                            <img src="assets/imgs/image-94.png" alt="Picture of Alyssa" class="user-pic">
+                        </div>
+                        <h2>Alyssa & Sam</h2>
+                        <button class="expand"><i class="fa fa-angle-down"></i></button>
+                    </div>
+                    <div class="panel-body">
+                        <img src="assets/imgs/adults-bouquet-bridal-woods.png" alt="Bride and groom in the woods">
+                        <div class="text-container">
+                            <p>"Words cannot express my gratitude Wedding Gram, Jo, and the No.1 staff. My wedding was something out of a magazine! It was the PERFECT wedding and it's all because of them. Using Wedding Gram, I was able to connect with Joe, give them my simple idea, and ist back and watch as they worked their magic and brought it to life. Thank you Wedding Gram for connecting me to Jo and her staff. My day was everything I could dream of and more!"
+                            </p>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="article">
+                    <div class="panel-header">
+                        <img src="assets/imgs/image-11.png" alt="Picture of Brianna" class="user-pic">
+                        <h2>Brianna & Devon</h2>
+                        <button class="expand"><i class="fa fa-angle-down"></i></button>
+                    </div>
+                    <div class="panel-body">
+                        <div class="text-container">
+                            <p>"We are so thankful to Fidan and Carly for their expertise, kindness, and attention to detail that allowed us to truly enjoy our wedding day to the fullest! Their vision helped us DESIGN OUR DREAM 😉 We started the wedding planning process determined that despite what people said we would be fine without wedding planning/coordination help. Thank you Wedding Gram for connecting us to these wonderful people and confirming that having a wedding planner was one of the best decisions"
+                            </p>
+                        </div>
+                        <img src="assets/imgs/rings-herart-shape-pages.png"
+                            alt="Wedding rings in a book with heart shaped pages">
+                    </div>
+                </div>
+
+                <div class="article">
+                    <div class="panel-header">
+                        <img src="assets/imgs/image-32.png" alt="Picture of Claire" class="user-pic">
+                        <h2>Claire & Adam</h2>
+                        <button class="expand"><i class="fa fa-angle-down"></i></button>
+
+                    </div>
+                    <div class="panel-body">
+                        <img src="assets/imgs/sitting-bouquet-bride-couple.png"
+                            alt="Bride and groom sitting on the steps with bouquet in front of them">
+                        <div class="text-container">
+                            <p>"I live in Connecticut and was married in North Carolina. I used Wedding Gram to find Elaine (Prime Example), who took care of everything for me from hundreds of miles away.  I had fun planning my wedding because Wedding Gram and Prime Example took all of the stress out of it!  Bottom line - use Wedding Gram to find your ideal wedding planer in the area you wish to get married, connect with them, and then sit back and enjoy the stress free experience."
+                            </p>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="article">
+                    <div class="panel-header">
+                        <img src="assets/imgs/image-126.png" alt="Picture of Sascha" class="user-pic">
+                        <h2>Sascha & Gabriel</h2>
+                        <button class="expand"><i class="fa fa-angle-down"></i></button>
+                    </div>
+                    <div class="panel-body">
+                        <div class="text-container">
+                            <p>"I don't know where we would be without Wedding Gram connecting us to the amazing Anna and her team. The website is beautifully created and easy to use.  Finding the perfect wedding planner for Gabriel and I was a breeze and Anna was our perfect match. Wedding Gram is right when they say to "Let them plan the wedding of your dreams" With Anna's help, it is a day we will never forget! Thank you from each and everyone of us."
+                            </p>
+                        </div>
+                        <img src="assets/imgs/bride-groom-tropics.png"
+                            alt="Bride and groom in a loving embrace under a tropical flower covered pergola.">
+                    </div>
+                </div>
+
+                <div class="article">
+                    <div class="panel-header">
+                        <img src="assets/imgs/image-128.png" alt="Picture of David" class="user-pic">
+                        <h2>David & Landon</h2>
+                        <button class="expand"><i class="fa fa-angle-down"></i></button>
+                    </div>
+                    <div class="panel-body">
+                        <img src="assets/imgs/groomsmen-socks.png"
+                            alt="Groom and groomsmen showing colorfully striped socks.">
+                        <div class="text-container">
+                            <p>"I cannot say enough about Wedding Gram and how they helped me find the Wonderful Cheryl at Sliver Birch Events. Finding Cheryl was simple and pain free; and our wedding was straight from a bridal magazine! My husband and I could not have asked for anything more. Thank you to Cheryl for making our day unforgettable. And thank you Wedding Gram for making it easy for us to find the perfect Wedding Planner. It was a match made in heaven! "
+                            </p>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div id="footer-cta">
+            <div class="footer-txt">
+                <h3>Plan your Wedding Now:</h3>
+                <button onClick=window.open("https://weddinggram.netlify.com")>Get Started</button> 
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

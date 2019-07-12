@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wedding Planner Website</title>
+    <link rel="icon" type="image/png" sizes="32X32" href="assets/imgs/favicon.png">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/iqf5opu.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet">
+    <!-- Css -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/index.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+    <!-- javaScript -->
+    <script src="js/about.js" async></script>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-container">
+            <img class="logo" src="assets/imgs/wg_logo.png" alt="Wedding Gram Logo">
+            <ul class="nav-list">
+                <li class="nav-links"><a href="index.html">Home</a></li>
+                <li class="nav-links"><a href="about.html">About</a></li>
+                <li class="nav-links"><a href="contact.html">Contact</a></li>
+                <div class="log-in inside">
+                    <button onClick=window.open("https://weddinggram.netlify.com")>Get Started</button> 
+                </div> 
+            </ul>
+            <div class="log-in" id='outside'>
+                <button onClick=window.open("https://weddinggram.netlify.com")>Get Started</button>
+            </div>
+            <div class="nav-toggler">
+                <div class="toggle line1"></div>
+                <div class="toggle line2"></div>
+                <div class="toggle line3"></div>
+            </div>
+        </nav>
+    </header>
+    <main class="container">
+        <section id="about-luis">
+            <div class="img-container-about">
+                <img src="assets/imgs/about-img.png" alt="Bride and Groom" class="header-img">
+                <h1>About Us</h1>
+            </div>
+            <!-- About the Project -->
+            <div class="txt-container-about">
+                <h2>We designed Wedding Gram with both the couple and the planner in mind.</h2>
+                <p>
+                    As a couple, when you first enter the site you can immediately view the weddings being planned
+                    around you- without having to log in or create an account.
+                    If you're a wedding planner, it's also just as simple. Create a account, go to your dashboard, and
+                    quickly add new wedding events from the get-go. No need to write an elaborate blogpost or upload
+                    slideshows worth of images: just create a post and share it!</p>
+            </div>
+        </section>
+        <!-- Meet the Team -->
+        <section>
+            <!-- Tabs Component -->
+            <div class="tabs-navigation">
+                <div class="team">
+                    <div data-tab="all" class="tab active-tabs">All</div>
+                    <div data-tab="team-lead" class="tab">Team Lead</div>
+                    <div data-tab="ui" class="tab">UI Developer</div>
+                    <div data-tab="front-end" class="tab">Front End Architect</div>
+                </div>
+            </div>
+            <hr id="about-divider">
+            <!-- Cards Component -->
+            <div class="cards-container">
+                <!-- Jor -->
+                <div class="card" data-tab="team-lead">
+                    <div class="card-header">
+                        <h2>Jor Min Poon</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-img">
+                            <img src="assets/imgs/Jor.png" alt="Image of Jor">
+                        </div>
+                        <div class="card-description">
+                            <p>"Don’t wait for opportunity. Create it."</p>
+                        </div>
+                        <button onClick=window.open("https://github.com/JorPoon")>GitHub</button>
+                    </div>
+                </div>
+
+                <!-- Alexis -->
+                <div class="card" data-tab="ui">
+                    <div class="card-header">
+                        <h2>Alexis Panyathong</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-img">
+                            <img src="assets/imgs/Alexis2.jpg" alt="Image of Alexis">
+                        </div>
+                        <div class="card-description">
+                            <p>"The past is place of learning, not a place of living."</p>
+                        </div>
+                        <button onClick=window.open("https://github.com/AlexisPanyathong")>GitHub</button>
+                    </div>
+                </div>
+
+                <!-- Jade -->
+                <div class="card" data-tab="ui">
+                    <div class="card-header">
+                        <h2>Jade Lopez</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-img">
+                            <img src="assets/imgs/Jade.png" alt="Image of Jade">
+                        </div>
+                        <div class="card-description">
+                            <p>"Associate with those who help you believe in yourself."</p>
+                        </div>
+                        <button onClick=window.open("https://github.com/jadeli1720")>GitHub</button>
+                    </div>
+                </div>
+
+                <!-- Luis -->
+                <div class="card" data-tab="ui">
+                    <div class="card-header">
+                        <h2>Luis De Anda</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-img">
+                            <img src="assets/imgs/luis.png" alt="Image of Luis">
+                        </div>
+                        <div class="card-description">
+                            <p>"Don't stop when you are tired. Stop when you are done."</p>
+                        </div>
+                        <button onClick=window.open("https://github.com/Luis1D")>GitHub</button>
+                    </div>
+                </div>
+
+                <!-- Devin -->
+                <div class="card" data-tab="front-end">
+                    <div class="card-header">
+                        <h2>Devin Warrick</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-img">
+                            <img src="assets/imgs/Devin.jpg" alt="Image of Devin">
+                        </div>
+                        <div class="card-description">
+                            <p>"Never stop doing your best just because someone doesn't give your credit."</p>
+                        </div>
+                        <button onClick=window.open("https://github.com/DevWarr")>GitHub</button>
+                    </div>
+                </div>
+
+                <!-- Henry -->
+                <div class="card" data-tab="front-end">
+                    <div class="card-header">
+                        <h2>Henry Leverette</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-img">
+                            <img src="assets/imgs/Henry.PNG" alt="Image of Henry">
+                        </div>
+                        <div class="card-description">
+                            <p>"Work until you no longer have to introduce yourself."</p>
+                        </div>
+                        <button onClick=window.open("https://github.com/trucane")>GitHub</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div id="footer-cta">
+            <div class="footer-txt">
+                <h3>Plan your Wedding Now:</h3>
+                <button onClick=window.open("https://weddinggram.netlify.com")>Get Started</button> </div> </div> <div
+                    class="blue-footer-bar">
+            </div>
+    </footer>
+</body>
+
+</html>

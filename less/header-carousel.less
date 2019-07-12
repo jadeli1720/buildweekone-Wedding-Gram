@@ -1,0 +1,114 @@
+//HEADER CAROUSEL DONE BY LUIS
+
+// ********** CAROUSEL STUFF START ********** //
+
+#luis {
+    margin-top: 115px;
+    padding: 0 50px;
+
+    @media(max-width: 500px) {
+        padding: 0 50px;
+    }
+}
+
+.carousel-container {
+    height: 500px;
+    max-width: 1200px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+
+    @media (max-width: 850px) {
+        height: 400px;
+    }
+    @media (max-width: 750px) {
+        height: 300px;
+    }
+    @media (max-width: 550px) {
+        height: 250px;
+    }
+}
+.carousel-img-one {
+    width: 100%;
+}
+
+
+// ********** ARROWS ********** //
+
+.arrow {
+    width: 30px;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 10px;
+    top: 39%;
+    bottom: 45%;
+    position: absolute;
+    background-color: @light-grey;
+    .transition();
+
+    &:hover {
+        background-color: @pink;
+        border: .25px solid @dark-blue ;
+        cursor: pointer;
+    }
+}
+#right-arrow {
+    right: 0;
+    transform: rotate(180deg);
+    padding: 5px;
+    box-shadow: 0 -5px 5px 0 rgba(0, 0, 0, 0.5);
+}
+#left-arrow {
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+// ********** CAROUSEL TXT STUFF ********** //
+
+.carousel-text-container {
+    color: @dark-blue;
+    background-color: rgba(255, 255, 255, 0.85);
+    position: absolute;
+    text-align: center;
+    width: 300px;
+    height: 250px;
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+
+    .welcome {
+        font-size: 70px;
+        line-height: 75px;
+        margin: 35px 5px 5px;
+        font-family: cinque-donne, cursive;
+    }
+    h2 {
+        font-size: 20px;
+        margin: 10px 15px 15px;
+        line-height: 25px;
+    }
+            
+    button {
+        .button();
+        box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+
+        &:hover {
+            .button-hover();
+        }
+    }
+
+    @media (max-width: 745px) {
+        left: 50%;
+        top: 40%;
+    }
+
+    @media(max-width: 600px) {
+        background-color: rgba(255, 255, 255, 0.6);
+        left: 50%;
+        box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.253);
+        top: 45%;
+    }
+    @media(max-width: 450px) {
+        width: 200px;
+    }
+} 
+//CAROUSEL END

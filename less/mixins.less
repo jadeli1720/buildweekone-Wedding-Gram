@@ -1,0 +1,43 @@
+//Flex Layout
+.custom-layout(@j, @a) {
+	display: flex;
+	justify-content: @j;
+	align-items: @a;
+}
+
+.shadow {
+    -webkit-box-shadow: @shadow;
+       -moz-box-shadow: @shadow;
+       -ms-box-shadow: @shadow;
+        -o-box-shadow: @shadow;
+           box-shadow: @shadow;
+}
+
+.transition {
+	-webkit-transition: @transition;  
+	   -moz-transition: @transition;
+	    -ms-transition: @transition; 
+	     -o-transition: @transition; 
+	        transition: @transition; 
+}
+
+.button {
+	background:@dark-blue ;
+	color: white;
+	cursor: pointer;
+	font-family: Lato, 'Futura', Helvetica, sans-serif;
+	font-size:1.6rem;
+	border: 2px solid @dark-blue ;
+	border-radius: 3px;
+	width: 120px;
+	height: 35px;
+	padding: 5px;
+	text-decoration: none;
+	.transition();
+}
+
+.button-hover {
+	background: @pink;
+	color: @dark-blue;
+}
+

@@ -1,0 +1,136 @@
+//NAVIGATION DONE BY JADE
+
+// NAVIGATION START
+nav {
+    background-color: @light-grey;
+    background-image: linear-gradient(to bottom, #f2f2f2, #f5f5f5, #f8f8f8, #fcfcfc, #ffffff);
+    .custom-layout(space-around, center);
+	.shadow();
+    position: fixed;
+    top:0%;
+    right: 0%;
+    margin: 0%;
+	height: 12vh;
+    width: 100vw;
+    z-index: 1;
+    text-transform: uppercase;
+
+    .logo {
+        position: relative;
+        max-width:12vh;
+    }
+}
+
+.nav-list{
+    .custom-layout(space-evenly, center);
+    width: 60%;
+
+    .nav-links{
+        list-style: none;
+        padding: 10px 10px;
+        .transition();
+        
+        a{	
+            color:@dark-blue ;
+            font-size: 2.4rem;
+            font-weight: 700;
+            text-decoration: none;
+            .transition();
+        }
+    }
+}
+
+.log-in {
+    button {
+        .button();
+        box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+
+        &:hover {
+            .button-hover();
+        }
+    }
+}
+
+.outside{
+    display: block;
+}
+
+.inside {
+    display: none;
+}
+
+// Hamburger Menu Styling
+.nav-toggler {
+    display: none;
+    cursor: pointer;
+
+    div {
+        background-color: @dark-blue ;
+        width: 25px;
+        height: 3px;
+        margin: 5px;
+        transition: all 0.3s ease-in;
+    }
+}
+
+
+@media @tablet {
+    .nav-list {
+        background-image: linear-gradient(to top, #f2f2f2, #f5f5f5, #f8f8f8, #fcfcfc, #ffffff);
+        position: absolute;
+        right: 0px;
+        height: 88vh;
+        top: 12vh;
+        .custom-layout(space-around, center);
+        flex-direction: column;
+        width: 50%;
+        z-index: 0;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .nav-links {
+        opacity: 0;
+    }
+
+    .nav-toggler {
+        display: block;
+    }
+
+    #outside{
+        display: none;
+    }
+    
+    .inside {
+        display: block;
+    }
+
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    from{
+        opacity: 0;
+        transform: translateX(50px); 
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0px); 
+    }
+}
+
+// Making the X close button 
+.toggle .line1 {                       //(x,y)
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2 {
+    opacity: 0;
+}
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+//navigation end
